@@ -1,0 +1,6 @@
+<form action="/comments" method="post">
+  <label for="comment_content">コメントを入力してください:</label><br>
+  <textarea id="comment_content" name="comment[content]"></textarea><br>
+  <input type="hidden" name="comment[prototype_id]" value="<%= @prototype.id %>">
+  <input type="submit" value="送信">
+</form>
